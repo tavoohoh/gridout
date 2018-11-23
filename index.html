@@ -1,0 +1,411 @@
+<div class="layout">
+  <!-- header -->
+  <div class="header custom-border custom-background">
+    
+    <h1 class="center">Gridout</h1>
+    <p class="center">0.0.1</p>
+
+  </div>
+  
+  <!-- sidebar -->
+  <div class="sidebar contentList custom-border">
+    <h5>Table of contents:</h5>
+    <ul>
+      <li>
+        <a href="#gettingStarted">
+          Getting started
+        </a>
+      </li>
+      <li>
+        <a href="#layoutHelpers">
+          CSS helpers
+        </a>
+      </li>
+      <li>
+        <a href="#columnSystem">
+          Column
+        </a>
+      </li>
+      <li>
+        <a href="#responsiveColumns">
+          Responsive
+        </a>
+      </li>
+      <li>
+        <a href="#columnPosition">
+          Custom column position
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="content">
+    <div class="container">
+      
+      <!-- getting started -->
+      <div class="grid" id="gettingStarted">
+        <h2 class="col-12 ">
+          Getting Started:
+        </h2>
+        <p class="col-12">
+          Gridout is a 12 column layout that uses <b>CSS grid</b> technology. <br>Download the CSS stylesheet, add the appropriate classes to your markup, and start building beautiful UI.
+        </p>
+      </div>
+      <hr>
+      
+      <!-- layout system 
+      <div class="grid" id="layoutSystem">
+        <h2 class="col-12">
+          Layout system:
+        </h2>
+        <p class="col-12">
+          By default <b>.layout</b> offers 4 components to build a basic interface: <br>
+        </p>
+        <p class="col-12 center-center">
+          <span>.header</span>
+          <span>.sidebar</span>
+          <span>.content</span>
+          <span>.footer</span>
+        </p>
+
+        <div class="col-12 browser-top">
+          <div>Gridout layout system</div>
+          <div>-</div>
+          <div>x</div>
+        </div>
+
+        <div class="col-12 browser">
+          <div class="layout layout-example">
+            <div class="header center-center">
+              <span>header</span>
+            </div>
+            <div class="sidebar center-center">
+              <span>sidebar</span>
+            </div>
+            <div class="content center-center">
+              <span>content</span>
+            </div>
+            <div class="footer center-center">
+              <span>footer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <xmp class="bgcode">
+            <div class="layout">
+              <div class="header">header</div>
+              <div class="sidebar">sidebar</div>
+              <div class="content">content</div>
+              <div class="footer">footer</div>
+            </div>
+          </xmp>
+        </div>
+      </div>
+      <hr>-->
+
+      <!-- layout helpers -->
+      <div class="grid" id="layoutHelpers">
+        <h2 class="col-12">
+          CSS helpers:
+        </h2>
+        <p class="col-12">
+          Default classes and styles designed to help you create more eye-catching and friendly UI Layouts.
+        </p>
+        
+        <!-- font family -->
+        <h3 class="col-12">
+          Open Sans font-family from Google Fonts.
+        </h3>
+        <p>
+          It was optimized for print, web, and mobile interfaces, and has excellent legibility characteristics in its letterforms.
+        </p>
+        <div class="col-6 col-sm-12">
+          <h1>Header 1</h1>
+          <h2>Header 2</h2>
+          <h3>Header 3</h3>
+          <h4>Header 4</h4>
+          <h5>Header 5</h5>
+          <h6>Header 6</h6>
+          <p>Paragraph</p>
+          <b>Bold</b>
+        </div>
+        <div class="col-6 col-sm-12">
+          <h1><i>Header 1</i></h1>
+          <h2><i>Header 2</i></h2>
+          <h3><i>Header 3</i></h3>
+          <h4><i>Header 4</i></h4>
+          <h5><i>Header 5</i></h5>
+          <h6><i>Header 6</i></h6>
+          <p><i>Paragraph</i></p>
+          <b><i>Bold</i></b>
+        </div>
+        
+        <!-- Elements positioning -->
+        <h3 class="col-12">
+          Elements positioning and styling.
+        </h3>
+        
+        <div class="col-4">
+          <p class="font-light">.font-light</p>
+          <xmp class="bgcode">
+  .font-light {
+    font-weight: 300;
+  }
+          </xmp>
+        </div>
+        
+        <div class="col-4">
+          <p class="font-regular">.font-regular</p>
+          <xmp class="bgcode">
+  .font-regular {
+    font-weight: 400;
+  }
+          </xmp>
+        </div>
+        
+        <div class="col-4">
+          <p class="font-heavy">.font-heavy</p>
+          <xmp class="bgcode">
+  .font-heavy {
+    font-heavy: 400;
+  }
+          </xmp>
+        </div>
+        
+        <div class="col-4">
+          <p class=".left">.left</p>
+          <xmp class="bgcode">
+  .left {
+    text-align: left;
+  }
+          </xmp>
+        </div>
+        
+        <div class="col-4">
+          <p class="center">.center</p>
+          <xmp class="bgcode">
+  .center {
+    text-align: center;
+  }
+          </xmp>
+        </div>
+
+        <div class="col-4">
+          <p class="right">.right</p>
+          <xmp class="bgcode">
+  .right {
+    text-align: right;
+  }
+          </xmp>
+        </div>
+        
+        <div class="col-4">
+          <p>.justify</p>
+          <xmp class="bgcode">
+  .center-center {
+    text-align: justify;
+  }
+          </xmp>
+        </div>
+        
+        <div class="col-4">
+          <p>.container</p>
+          <xmp class="bgcode">
+  .container {
+    width: 80%;
+    margin: 1.125rem auto;
+  }
+          </xmp>
+        </div>
+        
+      </div>
+      <hr>
+
+      <!-- Column system -->
+      <div class="grid" id="columnSystem">
+        <h2 class="col-12">
+          Column system:
+        </h2>
+        <p class="col-12">
+          If you have ever used another responsive framework, the column system will seem familiar.
+        </p>
+        <div class="bg1 col-4 center-center">
+          <span>4 of 12</span>
+        </div>
+        <div class="bg1 col-3 center-center">
+          <span>3 of 12</span></div>
+        <div class="bg1 col-5 center-center">
+          <span>5 of 12</span>
+        </div>
+        <!-- code -->
+        <div class="col-12">
+          <xmp class="bgcode">
+            <div class="grid">
+              <div class="col-4">4 of 12</div>
+              <div class="col-3">3 of 12</div>
+              <div class="col-5">5 of 12</div>
+            </div>
+          </xmp>
+        </div>
+      </div>
+      <hr>
+
+      <!-- responsive columns -->
+      <div class="grid" id="responsiveColumns">
+        <h2 class="col-12">
+          Responsive columns:
+        </h2>
+
+        <!-- description -->
+        <p class="col-12">
+          Available break points are:
+        </p>
+        <ul class="col-12">
+          <li>
+            <b>col-#/col-sm-#</b> Landscape phones, 576px and up.
+          </li>
+          <li>
+            <b>col-md-#</b> Medium devices,tablets, 768px and up.
+          </li>
+          <li>
+            <b>col-lg-#</b> Large devices, desktops, 992px and up.
+          </li>
+          <li>
+            <b>col-xl-#</b> Extra large devices, large desktops, 1200px and up.
+          </li>
+        </ul>
+
+        <!-- viewport message -->
+        <p class="col-12 center">
+          <span class="col-md-hide
+                       col-lg-hide
+                       col-xl-hide"><b>Viewport size is "sm"</b> all col-# or col-sm-# columns are being applied.
+          </span>
+          <span class="col-sm-hide
+                       col-lg-hide
+                       col-xl-hide"><b>Viewport size is "md"</b> all col-md-# columns are being applied.</span>
+          <span class="col-sm-hide
+                       col-md-hide
+                       col-xl-hide"><b>Viewport size is "lg"</b> all col-lg-# columns are being applied.</span>
+          <span class="col-sm-hide
+                       col-md-hide
+                       col-lg-hide"><b>Viewport size is "xl"</b> all col-xl-# columns are being applied.</span>
+          <span>To see other applications try changing the size of the window.</span>
+        </p>
+
+        <!-- columns example -->
+        <div class="bg1 center-center col-6 col-md-4 col-lg-4 col-xl-3">
+          <span class="col-md-hide
+                       col-lg-hide
+                       col-xl-hide">col-6</span>
+          <span class="col-hide
+                       col-lg-hide
+                       col-xl-hide">col-md-4</span>
+          <span class="col-hide
+                       col-md-hide
+                       col-xl-hide">col-lg-4</span>
+          <span class="col-hide
+                       col-md-hide
+                       col-lg-hide">col-xl-3</span>
+        </div>
+        <div class="bg1 center-center col-6 col-md-8 col-lg-4 col-xl-6">
+          <span class="col-md-hide
+                       col-lg-hide
+                       col-xl-hide">col-6</span>
+          <span class="col-hide
+                       col-lg-hide
+                       col-xl-hide">col-md-8</span>
+          <span class="col-hide
+                       col-md-hide
+                       col-xl-hide">col-lg-4</span>
+          <span class="col-hide
+                       col-md-hide
+                       col-lg-hide">col-xl-6</span>
+        </div>
+        <div class="bg1 center-center col-12 col-md-12 col-lg-4 col-xl-3">
+          <span class="col-md-hide
+                       col-lg-hide
+                       col-xl-hide">col-12</span>
+          <span class="col-hide
+                       col-lg-hide
+                       col-xl-hide">col-md-12</span>
+          <span class="col-hide
+                       col-md-hide
+                       col-xl-hide">col-lg-4</span>
+          <span class="col-hide
+                       col-md-hide
+                       col-lg-hide">col-xl-3</span>
+        </div>
+
+        <!-- code -->
+        <div class="col-12">
+          <xmp class="bgcode">
+            <div class="grid">
+              <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                sm: 6 / md: 4 / lg: 4 / xl: 3 of 12.
+              </div>
+              <div class="col-6 col-md-8 col-lg-4 col-xl-6">
+                sm: 6 / md: 8 / lg: 4 / xl: 6 of 12.
+              </div>
+              <div class="col-12 col-md-12 col-lg-4 col-xl-3">
+                sm: 12 / md: 12 / lg: 4 / xl: 3 of 12.
+              </div>
+            </div>
+          </xmp>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Custom column position -->
+      <div class="grid" id="columnPosition">
+        <h2 class="col-12">
+          Custom column position:
+        </h2>
+        <p class="col-12">
+          This implementation can be a bit confusing if you are not used to CSS grid.
+        </p>
+
+        <div class="bg2 col-custom center-center" style="--ini: 2; --end: 8;">
+          <span>.col-custom | --ini: 2; --end: 8;</span>
+        </div>
+        <div class="bg2 col-custom center-center" style="--ini: 4; --end: 11;">
+          <span>.col-custom | --ini: 4; --end: 11;</span>
+        </div>
+
+        <!-- code -->
+        <div class="col-12">
+          <xmp class="bgcode">
+            <div class="grid">
+              <div class="col-custom" style="--ini: 2; --end: 8;">
+                <span>
+                  Column start at grid position 2
+                  And end at grid position 7
+                </span>
+              </div>
+              <div class="col-custom" style="--ini: 4; --end: 11;">
+                <span>
+                  Column start at grid position 4
+                  And end at grid position 10
+                </span>
+              </div>
+            </div>
+          </xmp>
+        </div>
+      </div>
+    </div> <!-- /container end -->
+  </div>
+
+  <!-- footer -->
+  <div class="footer custom-border custom-background">
+    <a class="center" href="mailto: hi@tavoohoh.com">
+      hi@tavoohoh.com
+    </a>
+  </div>
+  
+</div>
+
+<!-- in progress flag -->
+<div class="inProgress">
+  Work in progress.
+<div>
