@@ -1,6 +1,8 @@
 # gridout
 Gridout is a 12 column layout that uses **CSS grid technology**.
-Download the CSS stylesheet and add it to your html file, add the appropriate classes to your markup, and start building beautiful UI. 
+Download the CSS stylesheet and add it to your html file, add the appropriate classes to your markup, and start building beautiful UI.
+
+[Demo.](https://tavoohoh.github.io/)
 
 ## CSS helpers:
 
